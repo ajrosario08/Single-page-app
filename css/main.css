@@ -142,9 +142,26 @@ section#features {
 }
 
 
+section#parallax {
+    height: 500px;
+    background-image: url(../img/ipadApp.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
+h2.parallax {
+    font-size: 3.6em;
+    color: #fff;
+    font-weight: 700;
+    -webkit-text-shadow: 0px 7px 8px black;
+    -moz-text-shadow: 0px 7px 8px black;
+    text-shadow: 0px 7px 8px black;
+}
 
-
+h2.parallax:after {
+    display: none;
+}
 
 
 

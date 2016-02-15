@@ -103,6 +103,11 @@ h2:after, h3:after {
     -moz-text-shadow: 1px 1px 1px black;
 }
 
+.nav > li.active {
+    background-color: #08192d;
+    transition: 1s all ease;
+}
+
 .nav > li > a:hover, .nav > li > a:focus {
     background-color: transparent;
 }

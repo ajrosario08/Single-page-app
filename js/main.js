@@ -21,7 +21,9 @@ $(document).ready(function() {
         }
     });//end of scroll function
 
-
+    $('.features-image img').waypoint(function(){
+        console.log('you have entered');
+    });
 
 });
 

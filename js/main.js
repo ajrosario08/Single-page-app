@@ -22,7 +22,9 @@ $(document).ready(function() {
     });//end of scroll function
 
     $('.features-image img').waypoint(function(){
-        console.log('you have entered');
+        $('.features-image img').addClass('animated flip');
+    }, {
+        offset: '50%'
     });
 
 });

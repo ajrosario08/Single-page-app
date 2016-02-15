@@ -136,6 +136,22 @@ section#features {
     margin: 0 auto;
 }
 
+.blue-circle div {
+    float: left;
+    width: 100%;
+    padding-top: 45%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.blue-circle div i {
+    font-size: 3em;
+    
+}
+
 #about .blue-circle {
     width: 50%;
     padding-bottom: 50%;

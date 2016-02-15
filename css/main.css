@@ -149,7 +149,18 @@ section#features {
 
 .blue-circle div i {
     font-size: 3em;
-    
+
+}
+
+#features .blue-circle div i {
+    font-size: 2em;
+}
+
+section#download .platforms i {
+    font-size: 2.5em;
+    position: absolute;
+    left: 20px;
+    top: 12px;
 }
 
 #about .blue-circle {

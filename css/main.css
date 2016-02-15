@@ -322,6 +322,27 @@ footer p {
     margin-bottom: 0;
 }
 
+/* ANIMATIONS */
+
+.animation1, .animation2, .animation3 {
+    opacity: 0;
+}
+
+.animation1 {
+
+}
+
+.animation2 {
+    animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+}
+
+.animation3 {
+    animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+}
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */

@@ -27,6 +27,12 @@ $(document).ready(function() {
         offset: '50%'
     });
 
+    $('#about .blue-circle').waypoint(function(){
+        $('#about .blue-circle').addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    });
+
 });
 
 smoothScroll.init({

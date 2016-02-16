@@ -22,7 +22,13 @@ $(document).ready(function() {
     });//end of scroll function
 
     $('.features-image img').waypoint(function(){
-        $('.features-image img').addClass('animated flip');
+        $('.features-image img').addClass('animated rubberBand');
+    }, {
+        offset: '50%'
+    });
+
+    $('#features .blue-circle').waypoint(function(){
+        $(this.element).addClass('animated fadeInUp');
     }, {
         offset: '50%'
     });
@@ -32,6 +38,8 @@ $(document).ready(function() {
     }, {
         offset: '50%'
     });
+
+
 
 });
 

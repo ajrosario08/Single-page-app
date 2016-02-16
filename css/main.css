@@ -415,7 +415,39 @@ footer p {
     section#features h4, section#features p {
         text-align: center;
     }
+
+    section#download .content-downloads {
+        height: 600px;
+    }
+
+    section#download div.phone,
+    section#download .download-empty {
+            width: 100%;
+    }
+
+    section#download download-empty {
+        position: relative;
+
+    }
+
+    section#download .download {
+        top: 600px;
+        z-index: 10;
+    }
+
+    section#download .platforms > div {
+        margin-bottom: 10px;
+    }
+
+    section#download .platforms i {
+        top: 2px;
+    }
+
+    section#parallax {
+        background-attachment: scroll;
+    }
 }
+
 @media(min-width: 768px) {}
 @media(min-width: 992px) {}
 @media(min-width: 1200px) {}

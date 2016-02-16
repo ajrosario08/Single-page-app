@@ -58,6 +58,54 @@ $(document).ready(function() {
         offset: '50%'
     });
 
+    $('#form').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validation: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            name: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is requried and cannot be empty'
+                    }
+                }
+            },
+
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is requried and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid address'
+                    }
+                }
+            },
+
+            message: {
+                validators: {
+                    notEmpty: {
+                        message: 'The message cannot be empty, who sends an empty message???'
+                    }
+                }
+            }
+
+        }
+    }).on('success.form.bv', function(e){
+        e.preventDefault();
+
+        var $form = $(e.target);
+
+        var bv = $form.data('bootstrapValidator');
+
+        $.post($form.attr('action'), $form.serialize(), function(result) {
+            console.log(result);
+        }, 'json');
+    });
+
 
 });
 

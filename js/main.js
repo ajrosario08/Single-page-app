@@ -46,6 +46,17 @@ $(document).ready(function() {
         offset: '50%'
     });
 
+    $('#download div.phone img').waypoint(function(){
+        $(this.element).addClass('animated fadeInRight');
+    }, {
+        offset: '50%'
+    });
+
+    $('#download .platforms > div').waypoint(function(){
+        $(this.element).addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    });
 
 
 });

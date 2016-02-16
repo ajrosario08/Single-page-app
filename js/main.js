@@ -39,6 +39,13 @@ $(document).ready(function() {
         offset: '50%'
     });
 
+    $('#screenshots .col-sm-4').waypoint(function(){
+        $(this.element).addClass('animated zoomIn');
+        $(this.element).css({'opacity': 1});
+    }, {
+        offset: '50%'
+    });
+
 
 
 });

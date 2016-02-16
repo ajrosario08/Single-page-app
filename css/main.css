@@ -382,6 +382,44 @@ footer p {
 
 }
 
+@media(max-width: 767px) {
+    .navbar-default .navbar-collapse {
+        border: none;
+    }
+
+    .navbar-collapse.in, .collapsing {
+        background-color: #123156;
+    }
+
+    .navbar-default .navbar-toggle:hover {
+        background: transparent;
+    }
+
+    .navbar-default .navbar-toggle:focus {
+        background: #123156;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+    }
+
+    #about .blue-circle, .blue-circle {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+
+    .features-image {
+        text-align: center;
+    }
+
+    section#features h4, section#features p {
+        text-align: center;
+    }
+}
+@media(min-width: 768px) {}
+@media(min-width: 992px) {}
+@media(min-width: 1200px) {}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

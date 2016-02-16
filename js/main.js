@@ -39,7 +39,7 @@ $(document).ready(function() {
         offset: '50%'
     });
 
-    $('#screenshots .col-sm-4').waypoint(function(){
+    $('#screenshots .col-xs-4').waypoint(function(){
         $(this.element).addClass('animated zoomIn');
         $(this.element).css({'opacity': 1});
     }, {
@@ -92,7 +92,6 @@ $(document).ready(function() {
                     }
                 }
             }
-
         }
     }).on('success.form.bv', function(e){
         e.preventDefault();
